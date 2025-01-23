@@ -6,9 +6,13 @@
   <groupId>com.myProjectWithMicroservices</groupId>
   <artifactId>AppWithMicreservices</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
   <name>AppWithMicreservices</name>
   <url>https://www.example.com</url>
+  <modules>
+    <module>customer_microservices</module>
+  </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
