@@ -4,3 +4,23 @@ server:
 spring:
   application:
     name: customer_microservice
+  datasource:
+    url: jdbc:postgresql://localhost:5432/customer
+    username: 'postgres'
+    password: 'troot2191020'
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          format_sql: true
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+
+logging:
+  level:
+    root: info
+    org.hibernate.SQL: debug          # Показывает все SQL-запросы
+    org.hibernate.type.descriptor.sql: trace # Показывает параметры SQL-запросов (включая bind-переменные)
+    org.springframework.orm.jpa: debug       # Логи уровня Spring Data JPA
+    org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: debug # Логи статистики Hibernate
