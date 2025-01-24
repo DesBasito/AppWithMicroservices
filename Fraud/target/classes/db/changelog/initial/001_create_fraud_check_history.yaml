@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: create fraud_check_history table
+      author: Abu_Bandit
+      changes:
+        - createTable:
+            tableName: fraud_check_history
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: customer_id
+                  type: int
+              - column:
+                  name: isFraudster
+                  type: Boolean
+              - column:
+                  name: createdAt
+                  type: timestamp
+

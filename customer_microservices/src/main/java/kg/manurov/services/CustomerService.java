@@ -3,12 +3,15 @@ package kg.manurov.services;
 import kg.manurov.entities.Customer;
 import kg.manurov.dto.CustomerRegistrationRequest;
 import kg.manurov.repositories.CustomerRepository;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
-public record CustomerService(CustomerRepository customerRepository) {
+@RequiredArgsConstructor
+public class CustomerService {
+    private final CustomerRepository customerRepository;
     public void registerCustomer(CustomerRegistrationRequest customerRequest) {
         Customer customer = Customer.builder()
                 .firstName(customerRequest.firstName())
