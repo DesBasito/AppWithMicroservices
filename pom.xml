@@ -12,6 +12,7 @@
   <url>https://www.example.com</url>
   <modules>
     <module>customer_microservices</module>
+      <module>Fraud</module>
   </modules>
 
   <properties>
