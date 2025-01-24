@@ -10,5 +10,8 @@
         <module name="customer_microservices" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Fraud" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
