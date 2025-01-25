@@ -16,9 +16,9 @@ import java.time.LocalDateTime;
 
 public class FraudCheckHistory {
     @Id
-    @SequenceGenerator(name = "fraud_id_seq",
-            sequenceName = "fraud_id_seq",allocationSize = -2)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "fraud_id_seq")
+    @SequenceGenerator(name = "fraud_id_sequence",
+            sequenceName = "fraud_id_sequence")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "fraud_id_sequence")
     private Integer id;
     private Integer customerId;
     private Boolean isFraudster;

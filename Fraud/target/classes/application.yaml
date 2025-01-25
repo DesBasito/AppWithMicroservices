@@ -20,11 +20,3 @@ spring:
   #  liquibase:
   #      change-log: classpath:/db/changelog/master.yaml
 
-logging:
-  level:
-    root: info
-    org.hibernate.SQL: debug          # Показывает все SQL-запросы
-    org.hibernate.type.descriptor.sql: trace # Показывает параметры SQL-запросов (включая bind-переменные)
-    org.springframework.orm.jpa: debug       # Логи уровня Spring Data JPA
-    liquibase: ERROR
-    org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: debug # Логи статистики Hibernate
