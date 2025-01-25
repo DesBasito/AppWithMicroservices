@@ -13,11 +13,12 @@ import java.time.LocalDateTime;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@SequenceGenerator(name = "fraud_id_sequence",
-        sequenceName = "fraud_id_sequence")
+
 public class FraudCheckHistory {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "fraud_id_sequence")
+    @SequenceGenerator(name = "fraud_id_seq",
+            sequenceName = "fraud_id_seq",allocationSize = -2)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "fraud_id_seq")
     private Integer id;
     private Integer customerId;
     private Boolean isFraudster;
