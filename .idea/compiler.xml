@@ -8,6 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="customer_microservices" />
+        <module name="eureka-server" />
+        <module name="Fraud" />
       </profile>
     </annotationProcessing>
   </component>
