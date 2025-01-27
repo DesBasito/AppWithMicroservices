@@ -1,6 +1,6 @@
 package kg.manurov.controller;
 
-import kg.manurov.FraudCheckResponse;
+import kg.manurov.dto.FraudCheckResponse;
 import kg.manurov.services.FraudCheckService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

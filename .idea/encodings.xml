@@ -3,10 +3,14 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Fraud/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Fraud/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/clients/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/clients/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/customer_microservices/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/customer_microservices/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/notification/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/notification/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
